@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProductActivity">
+
+    <TextView
+        android:id="@+id/NametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="43dp"
+        android:text="Name:"
+        android:textColor="#0B0808"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/TextName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CategorytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="44dp"
+        android:text="Category:"
+        android:textColor="#090707"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/TextCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NametextView" />
+
+    <TextView
+        android:id="@+id/PricetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="42dp"
+        android:text="Price:"
+        android:textColor="#100D0D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/TextPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CategorytextView" />
+
+    <TextView
+        android:id="@+id/TextName"
+        android:layout_width="202dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="46dp"
+        android:ems="10"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextPrice"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextCategory" />
+
+    <TextView
+        android:id="@+id/TextCategory"
+        android:layout_width="203dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="46dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
